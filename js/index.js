@@ -49,10 +49,18 @@ document.querySelector('a:nth-of-type(4)').textContent = "Features";
 document.querySelector('a:nth-of-type(5)').textContent = "About";
 document.querySelector('a:nth-of-type(6)').textContent = "Contact";
 
-// Add text content to class cta-text h1 and button
-document.querySelector('.cta-text h1').textContent = "DOM Is Awesome";
+// cta h1 
+//document.querySelector('.cta-text h1').textContent = "DOM Is Awesome";
 
-document.querySelector('.cta-text button').textContent = "Get Started";
+const ctaText = document.querySelector('h1');
+ctaText.textContent = siteContent.cta.h1; 
+
+// cta button 
+// document.querySelector('.cta-text button').textContent = "Get Started";
+
+const button = document.querySelector(".cta-text button");
+button.textContent = siteContent.cta.button; 
+
 
 // Create <br> element 
 const br = document.createElement('br');
@@ -68,3 +76,8 @@ const brFirstChild = parentBr.firstChild;
 const br2 = document.createElement('br');
 parentBr.insertBefore(br2, brFirstChild);
 
+// Refactor h1 text 
+//parentBr.insertAdjacentText(brFirstChild, 'DOM');
+//parentBr.insertBefore(parentBr.textContent, brFirstChild);
+  
+ 
