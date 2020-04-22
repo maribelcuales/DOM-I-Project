@@ -54,3 +54,17 @@ document.querySelector('.cta-text h1').textContent = "DOM Is Awesome";
 
 document.querySelector('.cta-text button').textContent = "Get Started";
 
+// Create <br> element 
+const br = document.createElement('br');
+
+// Create parent element for break
+const parentBr = document.querySelector(".cta-text h1");
+
+// create <br> child element
+parentBr.appendChild(br);
+const brFirstChild = parentBr.firstChild; 
+
+// Insert another <br> element before the first child
+const br2 = document.createElement('br');
+parentBr.insertBefore(br2, brFirstChild);
+
