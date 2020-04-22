@@ -49,3 +49,7 @@ document.querySelector('a:nth-of-type(4)').textContent = "Features";
 document.querySelector('a:nth-of-type(5)').textContent = "About";
 document.querySelector('a:nth-of-type(6)').textContent = "Contact";
 
+// Add text content to class cta-text h1 
+document.querySelector('.cta-text h1').textContent = "DOM Is Awesome";
+
+
