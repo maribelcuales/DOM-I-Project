@@ -112,3 +112,10 @@ content[3].textContent = siteContent["main-content"]["product-content"];
 titles[4].textContent = siteContent["main-content"]["vision-h4"];
 content[4].textContent = siteContent["main-content"]["vision-content"]; 
 
+
+// Add content to contact 
+
+titles[5].textContent = siteContent["contact"]["contact-h4"];
+
+// Create node list on Contact <p> contents 
+const contactInfo = document.querySelectorAll('.contact p');
