@@ -125,3 +125,6 @@ contactInfo[0].textContent = siteContent["contact"]["address"];
 contactInfo[1].textContent = siteContent["contact"]["phone"];
 contactInfo[2].textContent = siteContent["contact"]["email"];
 
+
+// Add content to footer 
+document.querySelector('footer p').textContent = siteContent["footer"]["copyright"];
