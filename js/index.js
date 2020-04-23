@@ -184,3 +184,23 @@ navLinks.forEach(links => {
   links.style.color = 'green';
 })
 
+
+// Create new nav a link Gallery  
+const gallery = document.createElement('a');
+gallery.setAttribute('href', "#");
+gallery.textContent = "Gallery"; 
+gallery.style.color = "green"; 
+
+// Append to parent 
+const parentNav = document.querySelector('nav'); 
+parentNav.appendChild(gallery); 
+
+
+// Create new nav a link History
+const history = document.createElement('a');
+history.setAttribute('href', "#");
+history.textContent = "History"; 
+history.style.color = "green"; 
+
+// Prepend to parent 
+parentNav.prepend(history); 
