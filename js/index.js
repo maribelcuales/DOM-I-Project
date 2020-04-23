@@ -41,7 +41,7 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-// Add text to nav a
+// Add content to nav links
 document.querySelector('a').textContent = siteContent["nav"]["nav-item-1"];
 document.querySelector('a:nth-of-type(2)').textContent = siteContent["nav"]["nav-item-2"];
 document.querySelector('a:nth-of-type(3)').textContent = siteContent["nav"]["nav-item-3"];;
@@ -49,11 +49,11 @@ document.querySelector('a:nth-of-type(4)').textContent = siteContent["nav"]["nav
 document.querySelector('a:nth-of-type(5)').textContent = siteContent["nav"]["nav-item-5"];;
 document.querySelector('a:nth-of-type(6)').textContent = siteContent["nav"]["nav-item-6"];;
 
-// cta h1 
+// Add content header (cta h1) 
 const ctaText = document.querySelector('h1');
 ctaText.textContent = siteContent.cta.h1; 
 
-// cta button 
+// Add cta button text
 const button = document.querySelector(".cta-text button");
 button.textContent = siteContent.cta.button; 
 
@@ -76,7 +76,14 @@ parentBr.insertBefore(br2, brFirstChild);
 //parentBr.insertAdjacentText(brFirstChild, 'DOM');
 //parentBr.insertBefore(parentBr.textContent, brFirstChild);
   
-// Add source to cta-img
+// Add source to header image
 const imgHeader = document.querySelector('#cta-img');
 imgHeader.setAttribute('src', siteContent["cta"]["img-src"]);
+
+// Features title and content 
+const featuresTitle = document.querySelector('.top-content h4');
+featuresTitle.textContent = siteContent["main-content"]["features-h4"];
+
+const featuresContent = document.querySelector('.top-content p');
+featuresContent.textContent = siteContent["main-content"]["features-content"];
 
