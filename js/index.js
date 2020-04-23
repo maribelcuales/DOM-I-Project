@@ -87,3 +87,11 @@ featuresTitle.textContent = siteContent["main-content"]["features-h4"];
 const featuresContent = document.querySelector('.top-content p');
 featuresContent.textContent = siteContent["main-content"]["features-content"];
 
+
+// Create a node list for the main-content h4 and p 
+const titles = document.querySelectorAll('h4');
+const content = document.querySelectorAll('p'); 
+
+// About Title and content 
+titles[1].textContent = siteContent["main-content"]["about-h4"];
+content[1].textContent = siteContent["main-content"]["about-content"];
