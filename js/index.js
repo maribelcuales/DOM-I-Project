@@ -100,3 +100,6 @@ content[1].textContent = siteContent["main-content"]["about-content"];
 const middleImg = document.querySelector('#middle-img');
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
+// Services title and content 
+titles[2].textContent = siteContent["main-content"]["services-h4"];
+content[2].textContent = siteContent["main-content"]["services-content"]; 
