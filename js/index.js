@@ -119,3 +119,9 @@ titles[5].textContent = siteContent["contact"]["contact-h4"];
 
 // Create node list on Contact <p> contents 
 const contactInfo = document.querySelectorAll('.contact p');
+
+// Add contact address, phone, and email 
+contactInfo[0].textContent = siteContent["contact"]["address"];
+contactInfo[1].textContent = siteContent["contact"]["phone"];
+contactInfo[2].textContent = siteContent["contact"]["email"];
+
