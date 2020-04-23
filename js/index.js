@@ -176,3 +176,11 @@ address2 = "Somewhere, USA";
 // Append 2nd part of the contact address 
 parentContact.append(address2);
 
+
+// Change nav text to green 
+const navLinks = document.querySelectorAll('a');
+
+navLinks.forEach(links => {
+  links.style.color = 'green';
+})
+
