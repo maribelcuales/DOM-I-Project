@@ -59,23 +59,43 @@ button.textContent = siteContent.cta.button;
 
 
 // Create break <br> element 
-const br = document.createElement('br');
+const br1 = document.createElement('br');
 
 // Create parent element for break
-const parentBr = document.querySelector(".cta-text h1");
+const parentBr = document.querySelector("h1");
 
-// create <br> child element
-parentBr.appendChild(br);
-const brFirstChild = parentBr.firstChild; 
+// Refactor cta-text h1 content 
+parentBr.textContent=""
+let text1 = parentBr.textContent;
 
-// Insert another <br> element before the first child
-const br2 = document.createElement('br');
-parentBr.insertBefore(br2, brFirstChild);
+// cta text part 1
+text1 = "DOM"
 
-// Refactor h1 text 
-//parentBr.insertAdjacentText(brFirstChild, 'DOM');
-//parentBr.insertBefore(parentBr.textContent, brFirstChild);
-  
+// Append text1 to parent
+parentBr.append(text1); 
+
+// Append child <br> to parent 
+parentBr.appendChild(br1); 
+
+// cta text part 2 
+let text2 = parentBr.textContent;
+text2 = "Is"; 
+
+// Append text2 to parent
+parentBr.append(text2); 
+
+// Append 2nd <br> to parent 
+const br2 = document.createElement('br'); 
+parentBr.appendChild(br2); 
+
+// cta text part 3
+let text3 = parentBr.textContent;
+text3 = "Awesome";
+
+// Append text 3 to parent
+parentBr.append(text3);
+
+
 // Add source to header image
 const imgHeader = document.querySelector('#cta-img');
 imgHeader.setAttribute('src', siteContent["cta"]["img-src"]);
