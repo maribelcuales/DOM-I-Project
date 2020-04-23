@@ -58,7 +58,7 @@ const button = document.querySelector(".cta-text button");
 button.textContent = siteContent.cta.button; 
 
 
-// Create <br> element 
+// Create break <br> element 
 const br = document.createElement('br');
 
 // Create parent element for break
@@ -76,4 +76,7 @@ parentBr.insertBefore(br2, brFirstChild);
 //parentBr.insertAdjacentText(brFirstChild, 'DOM');
 //parentBr.insertBefore(parentBr.textContent, brFirstChild);
   
- 
+// Add source to cta-img
+const imgHeader = document.querySelector('#cta-img');
+imgHeader.setAttribute('src', siteContent["cta"]["img-src"]);
+
