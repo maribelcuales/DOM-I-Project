@@ -103,3 +103,8 @@ middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 // Services title and content 
 titles[2].textContent = siteContent["main-content"]["services-h4"];
 content[2].textContent = siteContent["main-content"]["services-content"]; 
+
+// Product title and content 
+titles[3].textContent = siteContent["main-content"]["product-h4"];
+content[3].textContent = siteContent["main-content"]["product-content"]; 
+
