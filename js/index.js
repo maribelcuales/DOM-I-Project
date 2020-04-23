@@ -108,3 +108,7 @@ content[2].textContent = siteContent["main-content"]["services-content"];
 titles[3].textContent = siteContent["main-content"]["product-h4"];
 content[3].textContent = siteContent["main-content"]["product-content"]; 
 
+// Vision title and content 
+titles[4].textContent = siteContent["main-content"]["vision-h4"];
+content[4].textContent = siteContent["main-content"]["vision-content"]; 
+
