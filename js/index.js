@@ -128,3 +128,31 @@ contactInfo[2].textContent = siteContent["contact"]["email"];
 
 // Add content to footer 
 document.querySelector('footer p').textContent = siteContent["footer"]["copyright"];
+
+
+// Create <br> element  
+const newBreak = document.createElement('br'); 
+
+// Create parent element for the new element br to append to 
+const parentContact = contactInfo[0]; 
+
+// Refactor contact address: 
+parentContact.textContent = "";
+let address1 = parentContact.textContent; 
+
+// 1st part of the contact address
+address1 = "123 Way 456 Street";
+
+// Append address1 to parent 
+parentContact.append(address1); 
+
+// Append child <br> to parent
+parentContact.appendChild(newBreak);
+
+// Add 2nd part of the contact address
+let address2 = parentContact.textContent; 
+address2 = "Somewhere, USA";
+
+// Append 2nd part of the contact address 
+parentContact.append(address2);
+
