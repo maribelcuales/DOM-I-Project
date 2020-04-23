@@ -42,22 +42,18 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // Add text to nav a
-document.querySelector('a').textContent = "Services";
-document.querySelector('a:nth-of-type(2)').textContent = "Product";
-document.querySelector('a:nth-of-type(3)').textContent = "Vision";
-document.querySelector('a:nth-of-type(4)').textContent = "Features";
-document.querySelector('a:nth-of-type(5)').textContent = "About";
-document.querySelector('a:nth-of-type(6)').textContent = "Contact";
+document.querySelector('a').textContent = siteContent["nav"]["nav-item-1"];
+document.querySelector('a:nth-of-type(2)').textContent = siteContent["nav"]["nav-item-2"];
+document.querySelector('a:nth-of-type(3)').textContent = siteContent["nav"]["nav-item-3"];;
+document.querySelector('a:nth-of-type(4)').textContent = siteContent["nav"]["nav-item-4"];;
+document.querySelector('a:nth-of-type(5)').textContent = siteContent["nav"]["nav-item-5"];;
+document.querySelector('a:nth-of-type(6)').textContent = siteContent["nav"]["nav-item-6"];;
 
 // cta h1 
-//document.querySelector('.cta-text h1').textContent = "DOM Is Awesome";
-
 const ctaText = document.querySelector('h1');
 ctaText.textContent = siteContent.cta.h1; 
 
 // cta button 
-// document.querySelector('.cta-text button').textContent = "Get Started";
-
 const button = document.querySelector(".cta-text button");
 button.textContent = siteContent.cta.button; 
 
