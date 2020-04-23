@@ -95,3 +95,8 @@ const content = document.querySelectorAll('p');
 // About Title and content 
 titles[1].textContent = siteContent["main-content"]["about-h4"];
 content[1].textContent = siteContent["main-content"]["about-content"];
+
+// Add source to middle img 
+const middleImg = document.querySelector('#middle-img');
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
